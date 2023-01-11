@@ -374,7 +374,7 @@ header {
         grid-column: 1 / -1;
         grid-row: 2;
         position: relative;
-        left: -1em;
+        left: -2em;
         width: calc(100% + 3em);
         padding-left: 1em;
         padding-right: calc(200px + 4em);

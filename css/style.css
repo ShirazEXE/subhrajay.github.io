@@ -297,6 +297,121 @@ header {
     }
 }
 
+.projects{
+   padding: 0;
+   margin: 0;
+}
+
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.subsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    transition: flex .4s ease;
+}
+
+.subsection:hover{
+    flex: 2;
+}
+
+.subsection .overlay{
+    background-color: rgba(0, 0, 0, 0.4); 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: background-color .8s ease;
+}
+
+.subsection:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.8); 
+} 
+
+.subsection .content{
+    z-index: 2;
+}
+
+
+.subsubsection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.5;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    background-color: var(--color-text);
+    transition: flex .4s ease;
+}
+
+.subsubsection:hover{
+    flex: 1;
+}
+
+.subsubsection .overlay{
+    background-color: rgba(0, 0, 0, 0.4); 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: background-color .8s ease;
+}
+
+.subsubsection:hover .overlay{
+    background-color: rgba(0, 0, 0, 0.8); 
+} 
+
+.subsubsection .content{
+    z-index: 2;
+}
+
+.link1:link {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+.link1:visited {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+.link1:hover {
+    text-decoration: none;
+    color: #808080;
+  }
+  
+.link1:active {
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+
+#DexVisio{
+    background-image:url(../image/DexVisio.png);
+}
+
+#Kopyright{
+    background-image:url(../image/kopyright.png);
+}
+
+#Fortuna{
+    background-image:url(../image/fortuna.png);
+}
+
+#More{
+    background-image:url(../image/more.jpeg);
+}
+
 .education {
     background-color: var(--color-text);
     background-image: url(../image/education.jpg);
@@ -327,6 +442,7 @@ header {
 }
 
 .institutes {
+    align-self: auto;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -340,10 +456,26 @@ header {
     }
 
     .institutes + .institutes {
-        margin-left:14em;
+        margin-left:10em;
+        
         
         
     }
+}
+
+.institute_logo1{
+    max-height: 211px;
+    max-width: 221px;
+}
+
+.institute_logo2{
+    max-height: 211px;
+    max-width: 221px;
+}
+
+.institute_logo3{
+    max-height: 311px;
+    max-width: 321px;
 }
 
 .self{
@@ -392,12 +524,25 @@ header {
 .skills {
     background-color: var(--color-text);
     color: var(--color-background);
-    text-align: center;
+    text-align:center;
+}
+
+.section_title, 
+.section__title--skill{
+    text-align: auto;
+    margin-left: 1em;
+    margin-right: 0.2em;
 }
 
 .skill__list,
-.skill__list1 {
+.skill__list1,
+.skill__list2,
+.skill__list3 {
     list-style: none;
+}
+
+strong{
+    font-weight: lighter;
 }
 
 
